@@ -1,0 +1,11 @@
+% layout 'default';
+% title 'Archive';
+
+<p>The archive.</p>
+% if (ref $things eq 'ARRAY') {
+<ul>
+%=	tag 'li' => sub { link_to $_ => url_for->path("/get/$_") } for (@$things);
+</ul>
+% } else {
+	<p> <%= $things %> </p>
+% }

@@ -1,0 +1,4 @@
+storage/*
+log/*
+*.swp
+homerun.conf

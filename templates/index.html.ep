@@ -1,0 +1,24 @@
+% layout 'default';
+% title '';
+
+% if (flash 'ok_msg') {
+	<div class="success"><%= flash 'ok_msg' %></div>
+% } elsif (flash 'err_msg') {
+	<div class="error"><%= flash 'err_msg' %></div>
+% }
+
+% my $files = chooser;
+% if (ref $files eq 'ARRAY' && @$files > 0) {
+	<p>
+                <%= link_to url_for->path("get/$last") => sub { "Last upload" } %>
+                (<%= $last %>)
+        </p>
+% } else {
+	<p><%= $last %></p>
+%}
+
+% my @attrs = (method => 'POST', enctype => 'multipart/form-data');
+%= form_for upload => @attrs => begin
+%=	file_field 'file'
+%=	submit_button 'Upload'
+% end

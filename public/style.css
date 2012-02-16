@@ -1,0 +1,23 @@
+body { margin: 1em 2em; }
+nav ul { list-style: none; padding: 0; margin: 0; }
+nav li { float: left; margin: 0 0.15em; }
+nav li a {
+	height: 2em;
+	line-height: 2em;
+	float: left;
+	width: 9em;
+	display: block;
+	border: 0.1em solid #dcdce9;
+	color: #0d2474;
+	text-decoration: none;
+	text-align: center;
+}
+nav li a:hover, nav li a#selected {
+	background-color: #0d2474;
+	color: #dcdce9;
+}
+.clear { clear: both; }
+
+.error, .success { padding: 0.8em; margin: 1em 0; border: 2px solid #ddd; }
+.error		{ background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
+.success	{ background: #e6efc2; color: #264409; border-color: #c6d880; }
