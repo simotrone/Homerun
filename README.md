@@ -1,5 +1,5 @@
-Mojolicious::Lite webapp to manage upload/download file with simple interface
-and little archive.
+Homerun is a Mojolicious::Lite webapp to manage upload/download file with simple
+interface and little archive.
 
 
 ### Config
